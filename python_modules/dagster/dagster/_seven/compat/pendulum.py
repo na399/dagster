@@ -7,7 +7,7 @@ from typing_extensions import TypeAlias
 
 _IS_PENDULUM_2 = (
     hasattr(pendulum, "__version__")
-    and getattr(packaging.version.parse(getattr(pendulum, "__version__")), "major") == 2
+    and getattr(packaging.version.parse(getattr(pendulum, "__version__")), "major") >= 2
 )
 
 
